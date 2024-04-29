@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Music Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>VIP BEATS</h1>
+            <nav>
+                <a href="#home">Beats</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>NEW EXCLUSIVES_homo</h2>
+
+            <!-- Dynamic card element for displaying beats from Firestore -->
+    <div class="track-card" id="beat-card">
+        <div class="track-card" id="beat-narcos">
+            <div class="card">
+                <div class="details">
+                    <h3 id="beat-name">Loading...</h3>
+                    <p><strong>BPM:</strong> <span id="beat-bpm">Loading...</span></p>
+                </div>
+                <button class="play-button" data-src="Loading...">Play</button>
+            </div>
+        </div>
+        
+</div>
+
+        </div>
+    </section>
+
+    <!-- LEASES section -->
+    <section id="leases">
+        <div class="container">
+            <h2>LEASES</h2>
+            <div class="leases-container">
+                <div class="playlist">
+                    <!-- Existing track cards here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="container">
+            <audio id="audio-player" controls>
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </footer>
+
+    <!-- Firebase JavaScript SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBc7-O-iBa92lDjbQqE7Sr08Lmceb7eDIQ",
+            authDomain: "vip-folder-aadaf.firebaseapp.com",
+            projectId: "vip-folder-aadaf",
+            storageBucket: "vip-folder-aadaf.appspot.com",
+            messagingSenderId: "691053191402",
+            appId: "1:691053191402:web:ef8156e3655fb8e869b793",
+            measurementId: "G-0DK1SMTVPZ"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="scripts.js"></script> <!-- Your existing JavaScript file -->
+    <script src="beat_from_firestore.js"></script> <!-- New JavaScript file for Firebase -->
+</body>
+</html>

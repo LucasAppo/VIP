@@ -1,0 +1,248 @@
+/* Add the CSS styles here */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #3333333d;
+    color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid #ff0000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 60px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #555;
+    border-bottom: 100px solid #555555;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.track {
+    display: inline-block;
+    margin: 17px;
+
+}
+
+.card {
+    max-width: 4000px; /* Set the maximum width of the card */
+    margin: 6px auto; /* Center the card horizontally */
+    background-color: #222;
+    color: white;
+    border: 1px solid #a9a9a9;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.855); /* Subtle drop shadow */
+}
+
+/* Adjust button styling */
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block; /* Ensure button doesn't take up entire width */
+}
+
+button:hover {
+    background-color: #ff333300;
+    border: 1px solid #ff0000;
+}
+
+footer {
+    background-color: #33333300;
+    color: rgba(255, 255, 255, 0);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ffffff00;
+}
+
+/* Custom styles for audio player */
+audio {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Style the audio controls */
+audio::-webkit-media-controls-panel {
+    background-color: #222222;
+    border: 0px solid #55555500;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Style the audio track progress bar */
+audio::-webkit-media-controls-timeline {
+    height: 4px;
+    background-color: #ffffff00;
+    border-radius: 0px;
+}
+
+/* Style the audio track progress bar fill */
+audio::-webkit-media-controls-timeline::-webkit-media-slider-thumb {
+    background-color: red;
+    border: 1px solid #ff0909;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+} 
+
+/* Style the audio volume controls */
+audio::-webkit-media-controls-volume-slider::-webkit-media-slider-thumb {
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+/* Style the audio time display */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+/* Style the audio play/pause button */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+/* Style the audio play/pause button icon */
+audio::-webkit-media-controls-play-button::before,
+audio::-webkit-media-controls-pause-button::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 8px 14px;
+    border-color: transparent transparent transparent rgb(4, 255, 46);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #00000000;
+}
+
+#audio-player {
+    width: 100%;
+
+}
+
+/* Add this CSS to your existing stylesheet */
+
+#leases .playlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#leases .track-card {
+    width: 100%; /* Fill the entire width */
+    max-width: 500px; /* Adjust the maximum width of the card as needed */
+    margin: 10px;
+}
+
+#leases .card {
+    width: 100%; /* Fill the entire width */
+    background-color: #222;
+    color: white;
+    border: 1px solid #a9a9a9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.855); /* Subtle drop shadow */
+}
+
+#leases .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#leases .details p {
+    margin: 5px 0;
+}
+
+
+
+/* Styles for the dynamic card element */
+.track-card {
+    margin: 20px;
+    width: 300px; /* Adjust width as needed */
+}
+
+.track-card .card {
+    background-color: #222;
+    color: white;
+    border: 1px solid #a9a9a9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.855);
+}
+
+.track-card .details {
+    text-align: left;
+}
+
+.track-card button.play-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.track-card button.play-button:hover {
+    background-color: #ff333300;
+    border: 1px solid #ff0000;
+}
